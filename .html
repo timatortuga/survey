@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="styles.css"/>
+<html lang_en>
+    <head>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </head>
+    <body>
+        <form id="survey-form">
+            <fieldset>
+          <label id="name-label">Name <input id="name" type="text" class="inline" placeholder="Enter your name..." required/> </label>  
+          <label id="email-label">Email<input id="email" type="email" class="inline" placeholder="Enter your email..." required/> </label> 
+          <label id="number-label">Age <input id="number" type="number" class="inline" min="1" max="99" placeholder="Age..."/> </label>  
+        </fieldset>
+    <fieldset>
+          <label id="dropdown-label">Which option best describes your current role? <select id="dropdown"> 
+            <option value=""> Select your current role</option> 
+        <option value="1">Student!</option>
+        <option value="2">Part Time Worker!</option>
+        <option value="3">Full Time Worker/ Career Transitioner!</option>
+        <option value="4">Unemployeed!</option>
+    </select>
+</label>
+        </fieldset>
+        <fieldset>
+            <p>Would you recommend freeCodeCamp to a loved one?</p>
+            <label>Absolutely!<input type="radio"  name="answer-type" value="1"></label>
+            <label>Maybe...<input type="radio" name="answer-type" value="2"></label>
+            <label>No!<input type="radio" name="answer-type" value="3"></label>
+        </fieldset>
+            <fieldset>
+                <p>What would you like to see improved? (Check all that apply)</p>
+            <label>Front-end Projects<input type="checkbox" value="1"></label>
+            <label>Back-end Projects<input type="checkbox" value="2"></label>
+            <label>Help Features<input type="checkbox" value="3"></label>
+        </fieldset>
+        <fieldset>
+            <label>Any comments or suggestions?<textarea class="inline" name="comments" rows="4" cols="30" placeholder="Type comment here..."></textarea></label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit"/>
+        </form>
+    </body>
+</html>
